@@ -25,18 +25,11 @@ apply plugin: 'com.android.application'
     }
 
   dependencies {
-      // https://mvnrepository.com/artifact/org.openpnp/opencv
-      //implementation group: 'org.openpnp', name: 'opencv', version: '4.5.1-2'
-     // implementation 'org.openpnp:opencv:4.5.1-2'
-     // implementation group: 'org.bytedeco', name: 'opencv-platform', version: '4.5.1-1.5.5'
-      //implementation group: 'org.openpnp', name: 'opencv', version: '4.3.0-4'
       implementation group: 'com.mytechia', name: 'opencv', version: '4.3.0-my'
-    implementation fileTree (dir: "libs", include: ["*.jar"])
+      implementation fileTree (dir: "libs", include: ["*.jar"])
       implementation 'androidx.appcompat:appcompat:1.2.0'
       implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
       testImplementation 'junit:junit:4.12'
       androidTestImplementation 'androidx.test.ext:junit:1.1.2'
       androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
-
   }
